@@ -3838,8 +3838,10 @@
 			height: inherit;
 			line-height: inherit;
 			position: absolute;
-			right: 1.5em;
+			right: 3.5em;
+			margin-right: 2.5em;
 			top: 0;
+			overflow:hidden;
 		}
 
 			#header nav > ul {
@@ -3849,8 +3851,8 @@
 			}
 
 				#header nav > ul > li {
-					display: inline-block;
-					margin-left: 2em;
+					display: inline;
+					margin-left: 1em;
 					padding: 0;
 				}
 
@@ -3877,7 +3879,11 @@
 						}
 
 					#header nav > ul > li:first-child {
-						margin-left: 0;
+						margin-left: 3em;
+					}
+					#header nav > ul > li:last-child {
+						
+						
 					}
 
 		#header .navPanelToggle {
@@ -3931,7 +3937,7 @@
 			animation: none;
 			background-color: transparent;
 			box-shadow: none;
-			overflow: hidden;
+			overflow: inherit;
 			position: absolute;
 			top: 1.5em;
 		}
