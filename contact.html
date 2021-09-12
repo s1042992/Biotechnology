@@ -90,7 +90,7 @@
 								</div>
 								<div class="6u$ 12u$(large) 6u$(medium) 12u$(xsmall)">
 									<label for="text">Email</label>
-									<input type="text" name="text2" id="text2" />
+									<input type="email" name="email" id="email" />
 								</div>
 								<div class="12u$">
 									<label for="message">訊息</label>
@@ -162,12 +162,10 @@
 			<script src="https://smtpjs.com/v3/smtp.js"></script>
 			<script>
 			var testInput = document.getElementById("message").value;
-			var testInput = document.getElementById("text2").value;
+			var testInput = document.getElementById("email").value;
 			function sendEmail(){
 				Email.send({
-					Host : "smtp.gmail.com",
-					Username : "albert.huangchi@gmail.com",
-					Password : "o100493321",
+					SecureToken : "19c26474-b56a-43e7-ba17-47f3fef76213",
 					To : 'bigload123456@yahoo.com',
 					From : "albert.huangchi@gmail.com",
 					Subject : "This is the subject",
@@ -175,7 +173,7 @@
 				}).then(
 				  message => alert(message)
 				);
-						}
+			}
 			</script>
 
 	</body>
