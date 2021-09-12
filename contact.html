@@ -94,7 +94,7 @@
 								</div>
 								<div class="12u$">
 									<label for="message">訊息</label>
-									<textarea name="message" id="message" rows="5"></textarea>
+									<textarea name="message" id="message2" rows="5"></textarea>
 								</div>
 								<div class="12u$">
 									<ul class="actions">
@@ -161,9 +161,10 @@
 			<script src="assets/js/main.js"></script>
 			<script src="https://smtpjs.com/v3/smtp.js"></script>
 			<script>
-			var testInput = document.getElementById("message").value;
-			var testemail = document.getElementById("email2").value;
+			
 			function sendEmail(){
+				var testInput = document.getElementById("message2").value;
+				var testemail = document.getElementById("email2").value;
 				Email.send({
 					SecureToken : "19c26474-b56a-43e7-ba17-47f3fef76213",
 					To : 'bigload123456@yahoo.com',
