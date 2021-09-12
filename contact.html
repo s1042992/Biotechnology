@@ -90,7 +90,7 @@
 								</div>
 								<div class="6u$ 12u$(large) 6u$(medium) 12u$(xsmall)">
 									<label for="email">Email</label>
-									<input type="message" name="Emessage" id="Emessage" />
+									<input type="email" name="email" id="email" />
 								</div>
 								<div class="12u$">
 									<label for="message">訊息</label>
@@ -162,7 +162,7 @@
 			<script src="https://smtpjs.com/v3/smtp.js"></script>
 			<script>
 			let testInput = document.getElementById("message");
-			let emailInput = document.getElementById("Emessage");
+			let emailInput = document.getElementById("email");
 			function sendEmail(){
 				Email.send({
 					SecureToken : "3fe62454-3f65-423d-a70d-b1dc71d50efc",
