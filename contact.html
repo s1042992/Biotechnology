@@ -162,14 +162,14 @@
 			<script src="https://smtpjs.com/v3/smtp.js"></script>
 			<script>
 			var testInput = document.getElementById("message").value;
-			var emailInput = document.getElementById("text2").value;
+			var testInput = document.getElementById("text2").value;
 			function sendEmail(){
 				Email.send({
-					SecureToken : "e1b3c36f-1c43-4b26-be48-f091c4df1b50",
+					SecureToken : "7f1e728b-9ee5-4d1c-9d62-0e045105ffbd",
 					To : 'uuu0919twtw@yahoo.com.tw',
 					From : "albert.huangchi@gmail.com",
 					Subject : "This is the subject",
-					Body : "ccc",
+					Body : testInput+ testInput,
 				}).then(
 				  message => alert(message)
 				);
