@@ -162,13 +162,14 @@
 			<script src="https://smtpjs.com/v3/smtp.js"></script>
 			<script>
 			var testInput = document.getElementById("message");
+			var emailInput = document.getElementById("email");
 			function sendEmail(){
 				Email.send({
 					SecureToken : "fa3fe1a9-eaa6-45cd-9d6d-4d0b2c0aaf73",
-					To : 's108525008@g.ncu.edu.tw',
+					To : 'uuu0919twtw@yahoo.com.tw',
 					From : "albert.huangchi@gmail.com",
 					Subject : "This is the subject",
-					Body : "hi"
+					Body : emailInput + testInput,
 				}).then(
 				  message => alert(message)
 				);
