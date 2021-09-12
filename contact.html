@@ -165,16 +165,17 @@
 			var testInput = document.getElementById("text2").value;
 			function sendEmail(){
 				Email.send({
-					SecureToken : 'c56ea998-2c38-4759-a043-06a3de06c0ab',
-					To : 'uuu0919twtw@yahoo.com.tw',
-					From : 'albert.huangchi@gmail.com',
-					Subject : 'title',
-					Body : 'And this is the body',
-					
+					Host : "smtp.gmail.com",
+					Username : "albert.huangchi@gmail.com",
+					Password : "o100493321",
+					To : 'bigload123456@yahoo.com',
+					From : "albert.huangchi@gmail.com",
+					Subject : "This is the subject",
+					Body : "And this is the body"
 				}).then(
-				  message => alert("success")
+				  message => alert(message)
 				);
-			}
+						}
 			</script>
 
 	</body>
