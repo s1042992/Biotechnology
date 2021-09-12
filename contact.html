@@ -98,7 +98,7 @@
 								</div>
 								<div class="12u$">
 									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="special" /></li>
+										<li><input type="submit" value="Send Message" class="special" onclick="sendEmail()" /></li>
 										
 									</ul>
 								</div>
@@ -150,16 +150,19 @@
 				</div>
 			</footer>
 			<script>
-			Email.send({
-    SecureToken : "6bac3d25-4a95-4177-84a2-ce509b57450b",
-    To : 's108525008@g.ncu.edu.tw',
-    From : "albert.huangchi@gmail.com",
-    Subject : "This is the subject",
-    Body : "And this is the body"
-}).then(
-  message => alert(message)
-);
-</script>
+			var testInput = document.getElementById("message");
+			function sendEmail(){
+				Email.send({
+					SecureToken : "fa3fe1a9-eaa6-45cd-9d6d-4d0b2c0aaf73",
+					To : 's108525008@g.ncu.edu.tw',
+					From : "albert.huangchi@gmail.com",
+					Subject : "This is the subject",
+					Body : testInput
+				}).then(
+				  message => alert(message)
+				);
+			}
+			</script>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
