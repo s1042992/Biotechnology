@@ -165,11 +165,13 @@
 			var testInput = document.getElementById("text2").value;
 			function sendEmail(){
 				Email.send({
-					SecureToken : "7f1e728b-9ee5-4d1c-9d62-0e045105ffbd",
+					Host : "smtp.gmail.com",
+					Username : "albert.huangchi@gmail.com",
+					Password : "nvicwlycaylmwgjs",
 					To : 'uuu0919twtw@yahoo.com.tw',
 					From : "albert.huangchi@gmail.com",
 					Subject : "This is the subject",
-					Body : testInput+ testInput,
+					Body : "And this is the body"
 				}).then(
 				  message => alert(message)
 				);
